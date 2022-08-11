@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE theme PUBLIC "wa-app-theme" "http://www.webasyst.com/wa-content/xml/wa-app-theme.dtd">
+<theme id="tcse" app="site" vendor="1223107" author="TCSE" version="1.0" edition="6">
+  <name locale="ru_RU">TCSE Landing Page</name>
+  <files>
+    <file path="navigation.html">
+      <description locale="ru_RU">Navigation</description>
+    </file>
+    <file path="main-block.html">
+      <description locale="ru_RU">Main block</description>
+    </file>
+    <file path="features.html">
+      <description locale="ru_RU">Услуги</description>
+    </file>
+    <file path="reviews.html">
+      <description locale="ru_RU">Reviews</description>
+    </file>
+    <file path="rates.html">
+      <description locale="ru_RU">Rates</description>
+    </file>
+    <file path="offer.html">
+      <description locale="ru_RU">Offer</description>
+    </file>
+    <file path="footer.html">
+      <description locale="ru_RU">Footer</description>
+    </file>
+    <file path="index.html">
+      <description locale="ru_RU">Index</description>
+    </file>
+    <file path="error.html">
+      <description locale="ru_RU">Error</description>
+    </file>
+    <file path="page.html">
+      <description locale="ru_RU">Page</description>
+    </file>
+    <file path="assets/bootstrap/5.1.3/css/styles.css">
+      <description locale="ru_RU"/>
+    </file>
+    <file path="assets/bootstrap/5.1.3/js/scripts.js">
+      <description locale="ru_RU"/>
+    </file>
+    <file path="css/user.css">
+      <description locale="ru_RU">Core CSS file</description>
+    </file>
+    <file path="js/user.js">
+      <description locale="ru_RU"/>
+    </file>
+    <file path="home.html">
+      <description locale="ru_RU"/>
+    </file>
+    <file path="main.html">
+      <description locale="ru_RU"/>
+    </file>
+  </files>
+  <settings>
+    <!-- Общие настройки -->
+    <setting var="logo" control_type="text">
+      <value>TCSE</value>
+      <name locale="ru_RU">Название компании</name>
+      <name locale="en_US">Company name</name>
+    </setting>
+    <setting var="company_hr_1" control_type="paragraph">
+      <value/>
+      <name locale="ru_RU">&lt;hr&gt;</name>
+    </setting>
+    <setting var="mainmenu_links" control_type="select">
+      <value>site-pages</value>
+      <name locale="ru_RU">Ссылки в главном меню</name>
+      <name locale="en_US">Header links</name>
+      <description locale="ru_RU">Ссылки верхнего меню навигации могут определяться информационными страницами выбранного приложения и приложением «Управление меню»</description>
+      <options>
+        <option value="standart_menu">
+          <name locale="ru_RU">Стандартное меню</name>
+        </option>
+        <option value="site-pages">
+          <name locale="ru_RU">Страницы из приложение «Сайт»</name>
+        </option>
+        <option value="menu-pages">
+          <name locale="ru_RU">Ссылки из приложения «Управление меню»</name>
+        </option>
+      </options>
+    </setting>
+    <setting var="menu_id" control_type="text">
+      <value>1</value>
+      <name locale="ru_RU">ID Меню</name>
+      <name locale="en_US">Company name</name>
+    </setting>
+    <setting var="menu_hr_2" control_type="paragraph">
+      <value/>
+      <name locale="ru_RU">&lt;hr&gt;</name>
+    </setting>
+    <setting control_type="checkbox" var="custom_colors">
+      <value/>
+      <name locale="ru_RU">Свои цвета</name>
+    </setting>
+    <setting control_type="color" var="first_color">
+      <value>#d53369</value>
+      <name locale="ru_RU">Первый цвет</name>
+    </setting>
+    <setting control_type="color" var="second_color">
+      <value>#daae51</value>
+      <name locale="ru_RU">Второй цвет</name>
+    </setting>
+    <setting var="buttons_color_scheme" control_type="image_select">
+      <value>img/themebuttons/blue.png</value>
+      <name locale="ru_RU">Цветовая схема</name>
+      <options>
+        <option value="img/themebuttons/blue.png"/>
+        <option value="img/themebuttons/gray.png"/>
+        <option value="img/themebuttons/green.png"/>
+        <option value="img/themebuttons/indigo.png"/>
+        <option value="img/themebuttons/orange.png"/>
+        <option value="img/themebuttons/pink.png"/>
+        <option value="img/themebuttons/purple.png"/>
+        <option value="img/themebuttons/red.png"/>
+        <option value="img/themebuttons/teal.png"/>
+        <option value="img/themebuttons/yellow.png"/>
+      </options>
+    </setting>
+    <setting var="button_hr_1" control_type="paragraph">
+      <value/>
+      <name locale="ru_RU">&lt;hr&gt;</name>
+    </setting>
+    <setting var="button_round" control_type="select">
+      <value>standart</value>
+      <name locale="ru_RU">Ссылки в главном меню</name>
+      <name locale="en_US">Header links</name>
+      <description locale="ru_RU">Ссылки верхнего меню навигации могут определяться информационными страницами выбранного приложения и приложением «Управление меню»</description>
+      <options>
+        <option value="standart">
+          <name locale="ru_RU">Скругленные</name>
+        </option>
+        <option value="light-round">
+          <name locale="ru_RU">Слегка скругленные</name>
+        </option>
+        <option value="none-round">
+          <name locale="ru_RU">Без скругления</name>
+        </option>
+      </options>
+    </setting>
+    <!-- Главный блок -->
+    <setting var="main-block" control_type="group_divider">
+      <value>home</value>
+      <name locale="ru_RU">
+                Секция: Главный блок (первый экран)
+            </name>
+    </setting>
+    <setting var="main-block__values" control_type="paragraph">
+      <value/>
+      <name locale="ru_RU">Текстовые значения</name>
+    </setting>
+    <setting var="main_block__p" control_type="text">
+      <value>Организуйте свои продажи по-умному с Shop-Script</value>
+      <name locale="ru_RU">Текст над заголовком</name>
+    </setting>
+    <setting var="main_block__h1" control_type="text">
+      <value>Всë, что нужно для торговли через интернет</value>
+      <name locale="ru_RU">Заголовок</name>
+    </setting>
+    <setting var="main_block__p2" control_type="text">
+      <value>Быстрый старт.</value>
+      <name locale="ru_RU">Текст под заголовком</name>
+    </setting>
+    <!-- Преимущества блок -->
+    <setting var="features-block" control_type="group_divider">
+      <value>home</value>
+      <name locale="ru_RU">
+                Секция: Услуги
+            </name>
+    </setting>
+    <setting var="features__values" control_type="paragraph">
+      <value/>
+      <name locale="ru_RU">Текстовые значения</name>
+    </setting>
+    <setting var="features__h1_title" control_type="text">
+      <value>Услуги</value>
+      <name locale="ru_RU">Заголовок блока услуг</name>
+    </setting>
+    <setting var="features__h1_subtitle" control_type="text">
+      <value>Быстро, качественно, дорого - выбрать два</value>
+      <name locale="ru_RU">Подзаголовок блока услуг</name>
+    </setting>
+    <setting var="features__h1_1" control_type="text">
+      <value>Быстрый импорт и экспорт товаров</value>
+      <name locale="ru_RU">Заголовок №1</name>
+    </setting>
+    <setting var="features__p_1" control_type="text">
+      <value>В Shop-Script есть импорт/экспорт товаров и заказов. С помощью импорта CSV-файлов вы сможете импортировать весь каталог товаров или любую его часть. Загружайте каталоги от поставщиков или передавайте экспортированный каталог для загрузки своим партнёрам.</value>
+      <name locale="ru_RU">Описание №1</name>
+    </setting>
+    <setting var="features__h1_2" control_type="text">
+      <value>Доставка</value>
+      <name locale="ru_RU">Заголовок №2</name>
+    </setting>
+    <setting var="features__p_2" control_type="text">
+      <value>В Shop-Script можно включить много разных способов доставки для покупателей: от курьера и пунктов самовывоза до популярных служб доставки «СДЭК», «Боксберри», «ПЭК» и других. Для настройки способов доставки доступно множество готовых дополнительных модулей — &lt;a href="https://www.webasyst.ru/store/?filters%5Bcategory%5D=plugins%3Ashipping"&gt;плагинов&lt;/a&gt;, которые устанавливаются в Shop-Script одной кнопкой.</value>
+      <name locale="ru_RU">Описание №2</name>
+    </setting>
+    <setting var="features__h1_3" control_type="text">
+      <value>Список работ</value>
+      <name locale="ru_RU">Заголовок №3</name>
+    </setting>
+    <setting var="features__p_3" control_type="text">
+      <value><![CDATA[                Регистрация домена и хостинга при их отсуствии
+ Покупка всех лицензий с привязкой передачей на вашу учетную запись
+ Установка фреймворка на хостинг заказчика
+ Установка и настройка приложений Shop-Script, Блог, Сайт, Фото
+ Настройка выбранной темы дизайна в рамках ее возможностей
+ Установка счетчика посещаемости Яндекс.Метрика или Google.Analytics
+ Установка онлайн-консультанта при необходимости
+            ]]></value>
+      <name locale="ru_RU">Описание №3</name>
+    </setting>
+    <!-- Портфолио блок -->
+    <setting var="portfolio-block" control_type="group_divider">
+      <value>home</value>
+      <name locale="ru_RU">
+                Секция: Портфолио
+            </name>
+    </setting>
+    <setting var="portfolio__h1_title" control_type="text">
+      <value>Портфолио</value>
+      <name locale="ru_RU">Заголовок блока услуг</name>
+    </setting>
+    <setting var="portfolio__h1_subtitle" control_type="text">
+      <value>Вот некоторые примеры наших работ</value>
+      <name locale="ru_RU">Подзаголовок блока услуг</name>
+    </setting>
+    <setting var="portfolio__values" control_type="paragraph">
+      <value/>
+      <name locale="ru_RU">Блок из трех картинок и ссылок для перехода на любые произвольные страницы</name>
+    </setting>
+    <setting var="portfolio__img1" control_type="image">
+      <value>img/pic1.jpg?v1653060266</value>
+      <filename>img/pic1.*</filename>
+      <name locale="ru_RU">Загрузить картинку №1</name>
+    </setting>
+    <setting var="portfolio__img1_url" control_type="text">
+      <value>#</value>
+      <name locale="ru_RU">URL на картинку - 1</name>
+    </setting>
+    <setting var="portfolio__h1_1" control_type="text">
+      <value>Промдизайн</value>
+      <name locale="ru_RU">Заголовок №1</name>
+    </setting>
+    <setting var="portfolio__p_1" control_type="text">
+      <value>разработка рендера коллекции браслетов</value>
+      <name locale="ru_RU">Описание №1</name>
+    </setting>
+    <setting var="portfolio__img2" control_type="image">
+      <value>img/pic2.jpg?v1653060266</value>
+      <filename>img/pic2.*</filename>
+      <name locale="ru_RU">Загрузить картинку №2</name>
+    </setting>
+    <setting var="portfolio__img2_url" control_type="text">
+      <value>#</value>
+      <name locale="ru_RU">URL на картинку - 2</name>
+    </setting>
+    <setting var="portfolio__h1_2" control_type="text">
+      <value>Реклама кроссовок</value>
+      <name locale="ru_RU">Заголовок №2</name>
+    </setting>
+    <setting var="portfolio__p_2" control_type="text">
+      <value>Разработка рекламных буклетов</value>
+      <name locale="ru_RU">Описание №2</name>
+    </setting>
+    <setting var="portfolio__img3" control_type="image">
+      <value>img/pic3.jpg?v1653060266</value>
+      <filename>img/pic3.*</filename>
+      <name locale="ru_RU">Загрузить картинку №3</name>
+    </setting>
+    <setting var="portfolio__img3_url" control_type="text">
+      <value>#</value>
+      <name locale="ru_RU">URL на картинку - 3</name>
+    </setting>
+    <setting var="portfolio__h1_3" control_type="text">
+      <value>Промо ролик</value>
+      <name locale="ru_RU">Заголовок №3</name>
+    </setting>
+    <setting var="portfolio__p_3" control_type="text">
+      <value>Наше видение на тему </value>
+      <name locale="ru_RU">Описание №3</name>
+    </setting>
+    <!-- About блок -->
+    <setting var="about-block" control_type="group_divider">
+      <value>home</value>
+      <name locale="ru_RU">
+                Секция: О нас
+            </name>
+    </setting>
+    <setting var="about__h1_title" control_type="text">
+      <value>О НАС</value>
+      <name locale="ru_RU">Заголовок блока ABOUT</name>
+    </setting>
+    <setting var="about__h1_subtitle" control_type="text">
+      <value>Терпение и труд все перетрут</value>
+      <name locale="ru_RU">Подзаголовок блока услуг</name>
+    </setting>
+    <setting var="about__values" control_type="paragraph">
+      <value/>
+      <name locale="ru_RU">Блок ленты достижений компании и различных вех в ее истории</name>
+    </setting>
+    <setting var="about__timeline_image_1" control_type="image">
+      <value>img/about1.jpg?v1653068230</value>
+      <filename>img/about1.*</filename>
+      <name locale="ru_RU">Загрузить картинку №1</name>
+    </setting>
+    <setting var="about__timeline_heading_1" control_type="text">
+      <value>2022</value>
+      <name locale="ru_RU">Заголовок дата - 1</name>
+    </setting>
+    <setting var="about__timeline_subheading_1" control_type="text">
+      <value>Достижение 1</value>
+      <name locale="ru_RU">Заголовок под датой №1</name>
+    </setting>
+    <setting var="about__timeline_body_1" control_type="text">
+      <value><![CDATA[Доработки тем дизайна и интеграция плагинов (Front-end)
+                Разработка и доработка плагинов (Back-end)
+                Настройка функционала плагинов или тем дизайна
+                Разработка ТЗ, прототипирование, дизайн]]></value>
+      <name locale="ru_RU">Описание №1</name>
+    </setting>
+    <setting var="about__timeline_image_2" control_type="image">
+      <value>img/about2.jpg?v1653068230</value>
+      <filename>img/about2.*</filename>
+      <name locale="ru_RU">Загрузить картинку №2</name>
+    </setting>
+    <setting var="about__timeline_heading_2" control_type="text">
+      <value>2021</value>
+      <name locale="ru_RU">Заголовок дата - 2</name>
+    </setting>
+    <setting var="about__timeline_subheading_2" control_type="text">
+      <value>Достижение 2</value>
+      <name locale="ru_RU">Заголовок под датой №2</name>
+    </setting>
+    <setting var="about__timeline_body_2" control_type="text">
+      <value><![CDATA[Доработки тем дизайна и интеграция плагинов (Front-end)
+                Разработка и доработка плагинов (Back-end)
+                Настройка функционала плагинов или тем дизайна
+                Разработка ТЗ, прототипирование, дизайн]]></value>
+      <name locale="ru_RU">Описание №2</name>
+    </setting>
+    <setting var="about__timeline_image_3" control_type="image">
+      <value>img/about3.jpg?v1653068230</value>
+      <filename>img/about3.*</filename>
+      <name locale="ru_RU">Загрузить картинку №3</name>
+    </setting>
+    <setting var="about__timeline_heading_3" control_type="text">
+      <value>2020</value>
+      <name locale="ru_RU">Заголовок дата - 3</name>
+    </setting>
+    <setting var="about__timeline_subheading_3" control_type="text">
+      <value>Достижение 3</value>
+      <name locale="ru_RU">Заголовок под датой №3</name>
+    </setting>
+    <setting var="about__timeline_body_3" control_type="text">
+      <value><![CDATA[Доработки тем дизайна и интеграция плагинов (Front-end)
+                Разработка и доработка плагинов (Back-end)
+                Настройка функционала плагинов или тем дизайна
+                Разработка ТЗ, прототипирование, дизайн]]></value>
+      <name locale="ru_RU">Описание №3</name>
+    </setting>
+    <setting var="about__timeline_image_4" control_type="image">
+      <value>img/about4.jpg?v1653068230</value>
+      <filename>img/about4.*</filename>
+      <name locale="ru_RU">Загрузить картинку №4</name>
+    </setting>
+    <setting var="about__timeline_heading_4" control_type="text">
+      <value>2019</value>
+      <name locale="ru_RU">Заголовок дата - 4</name>
+    </setting>
+    <setting var="about__timeline_subheading_4" control_type="text">
+      <value>Достижение 4</value>
+      <name locale="ru_RU">Заголовок под датой №4</name>
+    </setting>
+    <setting var="about__timeline_body_4" control_type="text">
+      <value><![CDATA[Доработки тем дизайна и интеграция плагинов (Front-end)
+                Разработка и доработка плагинов (Back-end)
+                Настройка функционала плагинов или тем дизайна
+                Разработка ТЗ, прототипирование, дизайн]]></value>
+      <name locale="ru_RU">Описание №4</name>
+    </setting>
+    <!-- team блок -->
+    <setting var="team-block" control_type="group_divider">
+      <value>home</value>
+      <name locale="ru_RU">
+        Секция: Наша команда
+    </name>
+    </setting>
+    <setting var="team__h1_title" control_type="text">
+      <value>НАША КОМАНДА</value>
+      <name locale="ru_RU">Заголовок блока team</name>
+    </setting>
+    <setting var="team__h1_subtitle" control_type="text">
+      <value>Самые классные пацаны и девченки, все профи в своей теме</value>
+      <name locale="ru_RU">Подзаголовок блока услуг</name>
+    </setting>
+    <setting var="team__image_1" control_type="image">
+      <value>img/team1.jpg?v1653069467</value>
+      <filename>img/team1.*</filename>
+      <name locale="ru_RU">Загрузить картинку №1</name>
+    </setting>
+    <setting var="team__heading_1" control_type="text">
+      <value>Вася Пупкин</value>
+      <name locale="ru_RU">Имя персоны - 1</name>
+    </setting>
+    <setting var="team__subheading_1" control_type="text">
+      <value>Начальник</value>
+      <name locale="ru_RU">Должность персоны - 1</name>
+    </setting>
+    <setting var="team__sociallink_1_person1" control_type="text">
+      <value>https://vk.com</value>
+      <name locale="ru_RU">Ссылка на профиль Вконтакте персоны - 1</name>
+    </setting>
+    <setting var="team__sociallink_2_person1" control_type="text">
+      <value>https://tg.me</value>
+      <name locale="ru_RU">Ссылка на профиль Telegram персоны - 1</name>
+    </setting>
+    <setting var="team__sociallink_3_person1" control_type="text">
+      <value>info@mail.ru</value>
+      <name locale="ru_RU">Адрес электронной почты персоны - 1</name>
+    </setting>
+    <setting var="team__image_2" control_type="image">
+      <value>img/team2.jpg?v1656012665</value>
+      <filename>img/team2.*</filename>
+      <name locale="ru_RU">Загрузить картинку №2</name>
+    </setting>
+    <setting var="team__heading_2" control_type="text">
+      <value>Маша Иванова</value>
+      <name locale="ru_RU">Имя персоны - 2</name>
+    </setting>
+    <setting var="team__subheading_2" control_type="text">
+      <value>Маркетолог</value>
+      <name locale="ru_RU">Должность персоны - 2</name>
+    </setting>
+    <setting var="team__sociallink_1_person2" control_type="text">
+      <value>https://vk.com</value>
+      <name locale="ru_RU">Ссылка на профиль Вконтакте персоны - 2</name>
+    </setting>
+    <setting var="team__sociallink_2_person2" control_type="text">
+      <value>https://tg.me</value>
+      <name locale="ru_RU">Ссылка на профиль Telegram персоны - 2</name>
+    </setting>
+    <setting var="team__sociallink_3_person2" control_type="text">
+      <value>info@mail.ru</value>
+      <name locale="ru_RU">Адрес электронной почты персоны - 2</name>
+    </setting>
+    <setting var="team__image_3" control_type="image">
+      <value>img/team3.jpg?v1653655363</value>
+      <filename>img/team3.*</filename>
+      <name locale="ru_RU">Загрузить картинку №3</name>
+    </setting>
+    <setting var="team__heading_3" control_type="text">
+      <value>Иван Пряников</value>
+      <name locale="ru_RU">Имя персоны - 3</name>
+    </setting>
+    <setting var="team__subheading_3" control_type="text">
+      <value>Прогер</value>
+      <name locale="ru_RU">Должность персоны - 3</name>
+    </setting>
+    <setting var="team__sociallink_1_person3" control_type="text">
+      <value>https://vk.com</value>
+      <name locale="ru_RU">Ссылка на профиль Вконтакте персоны - 3</name>
+    </setting>
+    <setting var="team__sociallink_2_person3" control_type="text">
+      <value>https://tg.me</value>
+      <name locale="ru_RU">Ссылка на профиль Telegram персоны - 3</name>
+    </setting>
+    <setting var="team__sociallink_3_person3" control_type="text">
+      <value>info@mail.ru</value>
+      <name locale="ru_RU">Адрес электронной почты персоны - 3</name>
+    </setting>
+    <setting var="team__p_after" control_type="text">
+      <value>Вы тоже можете стать частью нашей команды, напишите любому из сотрудников удобным для вас способом. </value>
+      <name locale="ru_RU">Блок текста после карточек сотрудников</name>
+    </setting>
+    <!-- наши клиенты блок -->
+    <setting var="logoclients-block" control_type="group_divider">
+      <value>home</value>
+      <name locale="ru_RU">
+    Секция: Наши клиенты
+</name>
+    </setting>
+    <setting var="main-block__values" control_type="paragraph">
+      <value/>
+      <name locale="ru_RU">Рекомендуется предварительно подготовить логотипы в одинаковом размере. Напрмиер 300x100px</name>
+    </setting>
+    <setting var="logoclients__image_1" control_type="image">
+      <value>img/logoclients1.png?v1653649858</value>
+      <filename>img/logoclients1.*</filename>
+      <name locale="ru_RU">Загрузить лого - 1</name>
+    </setting>
+    <setting var="logoclients__heading_1" control_type="text">
+      <value>#</value>
+      <name locale="ru_RU">Ссылка лого - 1</name>
+    </setting>
+    <setting var="logoclients__image_2" control_type="image">
+      <value>img/logoclients2.png?v1653649858</value>
+      <filename>img/logoclients2.*</filename>
+      <name locale="ru_RU">Загрузить лого - 2</name>
+    </setting>
+    <setting var="logoclients__heading_2" control_type="text">
+      <value>#</value>
+      <name locale="ru_RU">Ссылка лого - 2</name>
+    </setting>
+    <setting var="logoclients__image_3" control_type="image">
+      <value>img/logoclients3.png?v1653649858</value>
+      <filename>img/logoclients3.*</filename>
+      <name locale="ru_RU">Загрузить лого - 3</name>
+    </setting>
+    <setting var="logoclients__heading_3" control_type="text">
+      <value>#</value>
+      <name locale="ru_RU">Ссылка лого - 3</name>
+    </setting>
+    <setting var="logoclients__image_4" control_type="image">
+      <value>img/logoclients4.png?v1653649978</value>
+      <filename>img/logoclients4.*</filename>
+      <name locale="ru_RU">Загрузить лого - 4</name>
+    </setting>
+    <setting var="logoclients__heading_4" control_type="text">
+      <value>#</value>
+      <name locale="ru_RU">Ссылка лого - 4</name>
+    </setting>
+    <!-- Блок призыв к действию -->
+    <setting var="offer-block" control_type="group_divider">
+      <value>home</value>
+      <name locale="ru_RU">
+                Секция: Призыв к действию (форма обратной связи)
+            </name>
+    </setting>
+    <setting var="offer__h1" control_type="text">
+      <value>Нужен интернет-магазин, срочно</value>
+      <name locale="ru_RU">Заголовок</name>
+    </setting>
+    <setting var="offer__p" control_type="text">
+      <value><![CDATA[                Заказать разработку интернет-магазина<br>
+ на специализированной платформе Shop Script <br>
+прямо сейчас в веб-студии TCSE
+            ]]></value>
+      <name locale="ru_RU">Описание</name>
+    </setting>
+  </settings>
+  <requirements>
+    <requirement property="app.installer" value="&gt;=1.13" strict="true"/>
+    <!-- 1.13 added support for gettext files for theme locale -->
+  </requirements>
+</theme>
