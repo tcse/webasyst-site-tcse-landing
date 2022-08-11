@@ -85,7 +85,7 @@
       <name locale="ru_RU">ID Меню</name>
       <name locale="en_US">Company name</name>
     </setting>
-    <setting var="menu_hr_2" control_type="paragraph">
+    <!-- <setting var="menu_hr_2" control_type="paragraph">
       <value/>
       <name locale="ru_RU">&lt;hr&gt;</name>
     </setting>
@@ -120,8 +120,8 @@
     <setting var="button_hr_1" control_type="paragraph">
       <value/>
       <name locale="ru_RU">&lt;hr&gt;</name>
-    </setting>
-    <setting var="button_round" control_type="select">
+    </setting> -->
+    <!-- <setting var="button_round" control_type="select">
       <value>standart</value>
       <name locale="ru_RU">Ссылки в главном меню</name>
       <name locale="en_US">Header links</name>
@@ -137,7 +137,7 @@
           <name locale="ru_RU">Без скругления</name>
         </option>
       </options>
-    </setting>
+    </setting> -->
     <!-- Главный блок -->
     <setting var="main-block" control_type="group_divider">
       <value>home</value>
